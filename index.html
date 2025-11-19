@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Difumerr</title>
+</head>
+<body>
+  <header class="header">
+    <img src="./img/logo.png" alt="logo" class="logo">
+    <h1>DIFUME<span>RR</span></h1>
+    <div class="bar">
+      <a href="#">
+        <img src="./img/cart.png" alt="cart" id="cart">
+      </a>
+      <a id="abrir">
+        <img src="./img/menu.png" alt="menu" id="menu">
+      </a>
+      <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x">X</i></button>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Ubicación</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  <hr>
+  <h2 id="txt-prod">Poductos</h2>
+  <hr class="hr">
+  <section class="container">
+    
+  </section>
+  <main>
+    <div class="header-bar">
+        <span class="filter-btn">Filtros</span>
+        <div class="sort-options">
+            <span>Ordenar por:</span>
+            <select id="sortSelect">
+                <option value="relevance">Más Relevante</option>
+                <option value="price_asc">Precio ↑</option>
+                <option value="sales">Más Vendido</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="product-gallery" id="productGallery">
+        </div>
+
+    <div class="loading-indicator" id="loadingIndicator">
+        Cargando más productos...
+    </div>
+
+    <template id="productCardTemplate">
+        <a href="" class="product-card">
+            <div class="product-image-container">
+                <span class="promotion-badge data-badge"></span>
+                <img src="" alt="" class="data-image">
+            </div>
+            <div class="product-details">
+                <div class="prices">
+                    <span class="price-new data-price-new"></span>
+                    <span class="price-old data-price-old"></span>
+                </div>
+                <h3 class="product-title data-title"></h3>
+                <div class="sales-info data-sales-info"></div>
+            </div>
+        </a>
+    </template>
+  </main>
+  
+  <footer class="footer">
+    <hr>
+    <div class="footer-grid-container">   
+      <div class="footer-col contacto">
+        <h3>Contáctanos</h3>
+        <p>📧 info@difumerr.com</p>
+        <p>📞 +52 55 1234 5678</p>
+        <address>📍 Av. de la Elegancia #101, CDMX</address>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 DifumeRR. Todos los derechos reservados.</p>
+    </div>
+</footer>
+  
+</body>
+</html>
